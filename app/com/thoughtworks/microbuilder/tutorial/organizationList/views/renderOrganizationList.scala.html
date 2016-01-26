@@ -1,0 +1,15 @@
+@import com.thoughtworks.microbuilder.tutorial.githubSdk.model.OrganizationSummary
+@(username: String, organizations: Array[OrganizationSummary])
+<html>
+  <body>
+    <h1>@username's organizations</h1>
+    <ul>
+      @for(organization <- organizations) {
+        <li>
+          <img src="@organization.avatar_url" width="20" height="20" title="@organization.description"/>
+          @organization.login
+        </li>
+      }
+    </ul>
+  </body>
+</html>

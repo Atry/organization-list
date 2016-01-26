@@ -1,0 +1,1 @@
+GET        /users/:username        com.thoughtworks.microbuilder.tutorial.organizationList.controllers.OrganizationListController.showOrganizationList(username:String)
